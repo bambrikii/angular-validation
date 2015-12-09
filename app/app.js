@@ -6,12 +6,14 @@ angular.module("app", [])
 				model: "=",
 				pattern: "=",
 				formName: "=",
-				elementName: "="
+				elementName: "=",
+				form: "="
 			},
 			templateUrl: "app/txt.htm",
 			controller: function ($scope) {
 				//console.log($scope.$parent.form1);
-				console.log($scope.$parent[$scope.formName][$scope.elementName]);
+				//console.log($scope.$parent[$scope.formName][$scope.elementName]);
+				console.log($scope.form);
 			}
 		}
 	})
@@ -22,7 +24,7 @@ angular.module("app", [])
 		$scope.someValue = "someValue1";
 		$scope.someValue2 = "someValue2";
 		$scope.somePattern = /^\d+$/;
-		console.log($scope);
+		//console.log($scope);
 		//$scope[$scope.formName][$scope.elementName].$setValidity($scope.elementName, false);
 	})
 ;

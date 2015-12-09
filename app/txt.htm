@@ -1,10 +1,9 @@
-<hr/>
-<input type="text" name="{{elementName}}" ng-required="required" ng-pattern="pattern" ng-model="model"><br/>
-{{model}} {{required}}<br/>
-<pre>
-{{$parent[formName]}}
-</pre>
-{{$parent[formName].$valid}}<br/>
-{{$parent[formName].$error}}<br/>
-<div ng-show="eval(formName.elementName).$invalid">invalid</div>
-<hr/>
+<div>
+	<hr/>
+	<input type="text" name="{{elementName}}" ng-required="required" ng-pattern="pattern" ng-model="model"/><br/>
+	<!--{{model}} {{required}}<br/>-->
+	<!--<pre>{{form|json}}</pre>-->
+	+{{form[elementName].$valid}}<br/>
+
+	<div ng-show="eval(formName.elementName).$invalid">invalid</div>
+</div>

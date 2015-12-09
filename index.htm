@@ -10,8 +10,8 @@
 		<input type="text" name="text1" ng-required="true" required><br/>
 		<input type="number" ng-model="size" name="size" min="0" max="10" integer/>{{size}}<br/>
 
-		<txt pattern="somePattern" model="someValue" required="true" form-name="'form1'" element-name="'element1'"></txt>
-		<txt model="someValue2" form-name="'form1'" element-name="'element2'"></txt>
+		<txt model="someValue" form="form1" element-name="'element1'" pattern="somePattern" required="true"></txt>
+		<txt model="someValue2" form="form1" element-name="'element2'"></txt>
 		<button>Button1</button>
 	</form>
 	{{form1.text1.$invalid}}
